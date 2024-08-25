@@ -28,7 +28,14 @@
     },
     "plugins": [
       "expo-router",
-      "react-native-vision-camera"
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "We need access to your camera to take photos and videos.",
+          "microphonePermissionText": "We need access to your microphone to record audio with your videos.",
+          "enableMicrophonePermission": true
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
