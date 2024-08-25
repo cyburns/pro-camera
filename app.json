@@ -13,13 +13,23 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "We need access to your camera to take photos and videos.",
+        "NSMicrophoneUsageDescription": "We need access to your microphone to record audio with your videos."
+      },
+      "bundleIdentifier": "com.cyrusburns.procamera"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.cyrusburns.procamera"
     },
     "web": {
       "bundler": "metro",
